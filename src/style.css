@@ -1,17 +1,17 @@
 .hero {
-text-align: center;
+  text-align: center;
   color: white;
-  background-image: url(/images/platzhalter.jpg) ;
+  background-image: url(/images/platzhalter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-height: 420px;
+  height: 420px;
 }
 
 .navbar-brand {
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   color: black;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 20px;
 }
 
@@ -24,7 +24,9 @@ height: 420px;
   font-weight: 900;
 }
 
-.dropdown-item.active {background-color: white;}
+.dropdown-item.active {
+  background-color: white;
+}
 
 .content {
   text-align: center;
@@ -75,7 +77,8 @@ h3 {
   font-size: 26px;
   font-family: "Quicksand", sans-serif;
   text-align: left;
-margin-bottom: 30px;}
+  margin-bottom: 30px;
+}
 
 h4 {
   font-size: 20px;
@@ -88,8 +91,10 @@ p {
   font-family: "Quicksand", sans-serif;
 }
 
-.textfullwidth {text-align: left;
-max-width: 1200px;}
+.textfullwidth {
+  text-align: left;
+  max-width: 1200px;
+}
 
 footer {
   position: fixed;
@@ -97,7 +102,7 @@ footer {
   width: 100%;
   background: black;
   color: white;
-  text-align: right;
+  text-align: center;
 }
 
 a {
@@ -156,11 +161,9 @@ a:hover {
 
 #logo1,
 #logo2,
-#logo3
-{margin-left: 20px;
+#logo3 {
+  margin-left: 20px;
 }
-
-
 
 @media (max-width: 1200px) {
   .gallery {
