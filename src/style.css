@@ -1,0 +1,207 @@
+.hero {
+text-align: center;
+  color: white;
+  background-image: url(/images/platzhalter.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+height: 420px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-nav {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.active {
+  font-weight: 900;
+}
+
+.dropdown-item.active {background-color: white;}
+
+.content {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 50px;
+}
+
+.copyright {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  margin: 5px 15px 5px 10px;
+}
+
+.fa-brands {
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+}
+.round {
+  border-radius: 50%;
+}
+
+.btn-dark {
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: black;
+  padding: 12px 25px;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+small {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: "DM Serif Display", serif;
+  padding-top: 60px;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+margin-bottom: 30px;}
+
+h4 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textfullwidth {text-align: left;
+max-width: 1200px;}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: right;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: left;
+  }
+
+  small {
+    font-size: 11px;
+  }
+
+  .round {
+    display: none;
+  }
+}
+
+.gallery {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 5;
+  -moz-column-gap: 5px;
+  column-count: 5;
+  column-gap: 5px;
+  padding-left: calc(8%);
+  padding-right: calc(8%);
+}
+
+.gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  filter: grayscale(100%);
+}
+
+#logo1,
+#logo2,
+#logo3
+{margin-left: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .gallery {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.portrait img {
+  filter: grayscale(100%);
+}
+
+.imagehover img:hover {
+  filter: none;
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+  position: relative;
+  z-index: 2;
+}
