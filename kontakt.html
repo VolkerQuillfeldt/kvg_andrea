@@ -18,6 +18,8 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbac8f4579.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/style.css">
+  <script src="js/smtp.js"></script>
+  <script src="js/sendmail.js"></script>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
   <title>KV Klingnau</title>
@@ -107,7 +109,7 @@
           <label for="exampleFormControlTextarea1" class="form-label">Deine Nachricht</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <input class="btn btn-dark mt-2 mb-1" type="submit" value="➡︎ E-Mail senden">
+        <button class="btn btn-dark mt-2 mb-1" onclick="sendEmail()">➡︎ E-Mail senden</button>
       </form>
 
     </div>
