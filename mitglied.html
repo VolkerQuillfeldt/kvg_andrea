@@ -117,7 +117,7 @@
         <li>Weitere im gleichen Haushalt lebende Mitglieder: CHF 60.– / Jahr</li>
         <li>Veteranen: CHF 50.– / Jahr.</li>
         <li>Ehrenmitglieder: gratis</li>
-        <li>Aufnahmegebühr (einmalig zu entrichten): CHF 100.–</li>
+        <li id="anker1">Aufnahmegebühr (einmalig zu entrichten): CHF 100.–</li>
       </ul>
       </p>
       <br>
@@ -164,52 +164,52 @@
           <label for="hund" class="form-label">Hund(e): Name, Rasse, Alter</label>
           <input id="hund" type="telefon" class="form-control" placeholder="Mein Hund, Mischling, 4" />
         </div>
-      </div>
-      <br>
-      <div>
-        <p><strong> Mit dem Absenden dieses Antragsformulars, treten folgende Punkte automatisch in Kraft:</strong>
+        <br>
+        <div>
+          <p><strong> Mit dem Absenden dieses Antragsformulars, treten folgende Punkte automatisch in Kraft:</strong>
+            <br>
+          <ul>
+            <li>Das Mitglied akzeptiert die Statuten und die Freigabe der Personalien an die SKG</li>
+            <li>Die Aufnahmegebühr beträgt einmalig Fr. 100.00 plus den aktuellen Jahresbeitrag</li>
+            <li>Minderjährige können nur im Einverständnis der Eltern/des gesetzlichen Vertretersin den Verein
+              aufgenommen werden.
+              Stimmrecht ab 16 Jahren</li>
+            <li>Die Aufnahme als Mitglied erfolgt durch den Vorstand</li>
+            <li>Die Aufnahme kann ohne Angabe von Gründen abgelehnt werden</li>
+            <li>Das Vereinsmitglied ist für die Haftpflichtversicherung seines Hundes selbst verantwortlich</li>
+            <li>Die Mithilfe bei Vereinsveranstaltungen ist erwünscht</li>
+            <li>Die Teilnahme am wöchentlichen Training, sofern möglich, ist erwünscht</li>
+            <li>Das Mitglied ist einverstanden, dass die Einladung und andere Korrespondenz zurGeneralversammlung per
+              Mail
+              erfolgt</li>
+            <li>Das Mitglied ist einverstanden, dass die Rechnung für die Jahresgebühren und das jährlicheVersenden
+              der
+              Mitgliederkarte per Mail erfolgt</li>
+          </ul>
           <br>
-        <ul>
-          <li>Das Mitglied akzeptiert die Statuten und die Freigabe der Personalien an die SKG</li>
-          <li>Die Aufnahmegebühr beträgt einmalig Fr. 100.00 plus den aktuellen Jahresbeitrag</li>
-          <li>Minderjährige können nur im Einverständnis der Eltern/des gesetzlichen Vertretersin den Verein
-            aufgenommen werden.
-            Stimmrecht ab 16 Jahren</li>
-          <li>Die Aufnahme als Mitglied erfolgt durch den Vorstand</li>
-          <li>Die Aufnahme kann ohne Angabe von Gründen abgelehnt werden</li>
-          <li>Das Vereinsmitglied ist für die Haftpflichtversicherung seines Hundes selbst verantwortlich</li>
-          <li>Die Mithilfe bei Vereinsveranstaltungen ist erwünscht</li>
-          <li>Die Teilnahme am wöchentlichen Training, sofern möglich, ist erwünscht</li>
-          <li>Das Mitglied ist einverstanden, dass die Einladung und andere Korrespondenz zurGeneralversammlung per Mail
-            erfolgt</li>
-          <li>Das Mitglied ist einverstanden, dass die Rechnung für die Jahresgebühren und das jährlicheVersenden der
-            Mitgliederkarte per Mail erfolgt</li>
-        </ul>
-        <br>
-        <strong> Datenschutz: Einwilligung zu Foto- oder Videoaufnahmen </strong><br>
-        Ich erkläre mich damit einverstanden, dass im Rahmen von Veranstaltungen oder im Training beim KV Klingnau
-        Bilder und/oder Videos von mir gemacht werden und zur Veröffentlichung auf der Homepage, in (Print-)
-        Publikationen oder auf
-        der Facebook-Seite verwendet und zu diesem Zwecke auch abgespeichert werden dürfen. Die Fotos und/oder Videos
-        dienen ausschliesslich der Öffentlichkeitsarbeit.
-        Ich bin mir darüber im Klaren, dass Fotos und/oder Videos im Internet von beliebigen Personen abgerufen werden
-        können. Es kann trotz aller technischer Vorkehrungen nicht ausgeschlossen werden, dass solche Personen die Fotos
-        und/oder Videos weiterverwenden oder an andere Personen weitergeben. Diese Einverständniserklärung ist
-        freiwillig und kann
-        gegenüber dem KV Klingnau jederzeit mit Wirkung für die Zukunft widerrufen werden. Sind die Aufnahmen im
-        Internet
-        verfügbar, erfolgt die Entfernung, soweit dies dem möglich ist.
-        </p>
-        <br>
+          <strong> Datenschutz: Einwilligung zu Foto- oder Videoaufnahmen </strong><br>
+          Ich erkläre mich damit einverstanden, dass im Rahmen von Veranstaltungen oder im Training beim KV Klingnau
+          Bilder und/oder Videos von mir gemacht werden und zur Veröffentlichung auf der Homepage, in (Print-)
+          Publikationen oder auf
+          der Facebook-Seite verwendet und zu diesem Zwecke auch abgespeichert werden dürfen. Die Fotos und/oder Videos
+          dienen ausschliesslich der Öffentlichkeitsarbeit.
+          Ich bin mir darüber im Klaren, dass Fotos und/oder Videos im Internet von beliebigen Personen abgerufen
+          werden
+          können. Es kann trotz aller technischer Vorkehrungen nicht ausgeschlossen werden, dass solche Personen die
+          Fotos
+          und/oder Videos weiterverwenden oder an andere Personen weitergeben. Diese Einverständniserklärung ist
+          freiwillig und kann
+          gegenüber dem KV Klingnau jederzeit mit Wirkung für die Zukunft widerrufen werden. Sind die Aufnahmen im
+          Internet
+          verfügbar, erfolgt die Entfernung, soweit dies dem möglich ist.
+          </p>
+          <br>
+        </div>
+        <button class="btn btn-dark mt-2 mb-1" onclick="sendAntrag()">➡︎ Antrag einreichen</button>
       </div>
-      <button class="btn btn-dark mt-2 mb-1" onclick="sendAntrag()">➡︎ Antrag einreichen</button>
+      <div id="reply" style="display: none;">Danke für deinen Antrag. Wir melden uns in kürze bei dir.
+      </div>
     </div>
-    <div id="reply" style="display: none;">Danke für deinen Antrag. Wir melden uns in
-      kürze bei dir.
-    </div>
-
-
-  </div>
   </div>
   <footer class="footer mt-auto py-2">
     <p class="copyright"> <span>
