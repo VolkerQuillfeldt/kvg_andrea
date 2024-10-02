@@ -18,6 +18,8 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbac8f4579.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/style.css">
+  <script src="js/smtp.js"></script>
+  <script src="js/sendmail.js"></script>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
   <title>KV Klingnau</title>
@@ -100,15 +102,10 @@
         mithelfen, oder auch bei Unterhaltsarbeiten mit anpacken! <br><br>
         Ein Verein bedeutet... <br>
 
-        ... miteinander hündele <br>
-
-        ... miteinander Spass haben <br>
-
-        ... miteinander die Faszination Hund erleben <br>
-
-        ... miteinander zusammensitzen und etwas trinken <br>
-
-        ... miteinander anpacken, wenn es etwas zu tun gibt </p>
+        ... miteinander hündele und Spass haben <br>
+        ... miteinander Hunde erleben und besser verstehen <br>
+        ... miteinander zusammensitzen <br>
+        ... miteinander anpacken und lernen </p>
 
       <br>
       <hr>
@@ -116,21 +113,99 @@
 
       <h3>Mitgliederbeiträge</h3>
       <ul>
-        <li>Mitgliederbeitrag: CHF 100.00 / Jahr</li>
-        <li>Weitere im gleichen Haushalt lebende Mitglieder: CHF 60.00 / Jahr</li>
-        <li>Veteranen: CHF 50.00 / Jahr.</li>
+        <li>Mitgliederbeitrag: CHF 100.– / Jahr</li>
+        <li>Weitere im gleichen Haushalt lebende Mitglieder: CHF 60.– / Jahr</li>
+        <li>Veteranen: CHF 50.– / Jahr.</li>
         <li>Ehrenmitglieder: gratis</li>
-        <li>Eintrittsgebühr (einmalig zu entrichten): CHF 10.00</li>
+        <li>Aufnahmegebühr (einmalig zu entrichten): CHF 100.–</li>
       </ul>
       </p>
       <br>
       <hr>
       <br>
-      <h3>Antragsformular</h3>
-
-
-
+      <h3>Antragsformular <span><small>
+            <a href="downloads/Beitrittserklaerung.pdf"> ➡︎ Hier kannst du das
+              Formular auch
+              als PDF
+              downloaden</a></small>
+        </span></h3>
+      <div id="form">
+        <div class="row g-3 mb-3">
+          <div class="col">
+            <label for="nachname" class="form-label">Name</label>
+            <input id="nachname" type="text" class="form-control" placeholder="Name" aria-label="Name" />
+          </div>
+          <div class="col">
+            <label for="vorname" class="form-label">Vorname</label>
+            <input id="vorname" type="text" class="form-control" placeholder="Vorname" aria-label="Vorname" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="adresse" class="form-label">Adresse</label>
+          <input id="adresse" type="text" class="form-control" placeholder="Adresse" aria-label="Adresse" />
+        </div>
+        <div class="mt-3 mb-3">
+          <label for="plzort" class="form-label">Postleitzahl / Ort</label>
+          <input id="plzort" type="text" class="form-control" placeholder="PLZ Ort" aria-label="plzort" />
+        </div>
+        <div class="mt-3 mb-3">
+          <label for="geburtsdatum" class="form-label">Geburtsdatum</label>
+          <input id="geburtsdatum" type="text" class="form-control" placeholder="DD.MM.JJJJ" aria-label="plzort" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-Mail Adresse</label>
+          <input id="email" type="email" class="form-control" placeholder="name@example.com" />
+        </div>
+        <div class="mb-4">
+          <label for="telefon" class="form-label">Telefon</label>
+          <input id="telefon" type="telefon" class="form-control" placeholder="+41 XX XXX XX XX" />
+        </div>
+      </div>
+      <br>
+      <div>
+        <p><strong> Mit dem Absenden dieses Antragsformulars, treten folgende Punkte automatisch in Kraft:</strong>
+          <br>
+        <ul>
+          <li>Das Mitglied akzeptiert die Statuten und die Freigabe der Personalien an die SKG</li>
+          <li>Die Aufnahmegebühr beträgt einmalig Fr. 100.00 plus den aktuellen Jahresbeitrag</li>
+          <li>Minderjährige können nur im Einverständnis der Eltern/des gesetzlichen Vertretersin den Verein
+            aufgenommen werden.
+            Stimmrecht ab 16 Jahren</li>
+          <li>Die Aufnahme als Mitglied erfolgt durch den Vorstand</li>
+          <li>Die Aufnahme kann ohne Angabe von Gründen abgelehnt werden</li>
+          <li>Das Vereinsmitglied ist für die Haftpflichtversicherung seines Hundes selbst verantwortlich</li>
+          <li>Die Mithilfe bei Vereinsveranstaltungen ist erwünscht</li>
+          <li>Die Teilnahme am wöchentlichen Training, sofern möglich, ist erwünscht</li>
+          <li>Das Mitglied ist einverstanden, dass die Einladung und andere Korrespondenz zurGeneralversammlung per Mail
+            erfolgt</li>
+          <li>Das Mitglied ist einverstanden, dass die Rechnung für die Jahresgebühren und das jährlicheVersenden der
+            Mitgliederkarte per Mail erfolgt</li>
+        </ul>
+        <br>
+        <strong> Datenschutz: Einwilligung zu Foto- oder Videoaufnahmen </strong><br>
+        Ich erkläre mich damit einverstanden, dass im Rahmen von Veranstaltungen oder im Training beim KV Klingnau
+        Bilder und/oder Videos von mir gemacht werden und zur Veröffentlichung auf der Homepage, in (Print-)
+        Publikationen oder auf
+        der Facebook-Seite verwendet und zu diesem Zwecke auch abgespeichert werden dürfen. Die Fotos und/oder Videos
+        dienen ausschliesslich der Öffentlichkeitsarbeit.
+        Ich bin mir darüber im Klaren, dass Fotos und/oder Videos im Internet von beliebigen Personen abgerufen werden
+        können. Es kann trotz aller technischer Vorkehrungen nicht ausgeschlossen werden, dass solche Personen die Fotos
+        und/oder Videos weiterverwenden oder an andere Personen weitergeben. Diese Einverständniserklärung ist
+        freiwillig und kann
+        gegenüber dem KV Klingnau jederzeit mit Wirkung für die Zukunft widerrufen werden. Sind die Aufnahmen im
+        Internet
+        verfügbar, erfolgt die Entfernung, soweit dies dem möglich ist.
+        </p>
+        <br>
+      </div>
+      <button class="btn btn-dark mt-2 mb-1" onclick="sendEmail()">➡︎ Antrag einreichen</button>
     </div>
+    <div id="reply" style="display: none;">Danke für deinen Antrag, bei uns Mitglied zu werden. Wir melden uns in
+      kürze bei dir.
+    </div>
+
+
+  </div>
   </div>
   <footer class="footer mt-auto py-2">
     <p class="copyright"> <span>
