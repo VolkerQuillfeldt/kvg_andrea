@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/fbac8f4579.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/style.css">
   <script src="js/smtp.js"></script>
-  <script src="js/sendmail.js"></script>
+  <script src="js/sendantrag.js"></script>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
   <title>KV Klingnau</title>
@@ -160,6 +160,10 @@
           <label for="telefon" class="form-label">Telefon</label>
           <input id="telefon" type="telefon" class="form-control" placeholder="+41 XX XXX XX XX" />
         </div>
+        <div class="mb-4">
+          <label for="hund" class="form-label">Hund(e): Name, Rasse, Alter</label>
+          <input id="hund" type="telefon" class="form-control" placeholder="Mein Hund, Mischling, 4" />
+        </div>
       </div>
       <br>
       <div>
@@ -198,9 +202,9 @@
         </p>
         <br>
       </div>
-      <button class="btn btn-dark mt-2 mb-1" onclick="sendEmail()">➡︎ Antrag einreichen</button>
+      <button class="btn btn-dark mt-2 mb-1" onclick="sendAntrag()">➡︎ Antrag einreichen</button>
     </div>
-    <div id="reply" style="display: none;">Danke für deinen Antrag, bei uns Mitglied zu werden. Wir melden uns in
+    <div id="reply" style="display: none;">Danke für deinen Antrag. Wir melden uns in
       kürze bei dir.
     </div>
 
