@@ -15,6 +15,11 @@ function sendEmail() {
     email +
     "<br/>" +
     "<br/>" +
+    "Betreff:&nbsp;" +
+    "<br/>" +
+    betreff +
+    "<br/>" +
+    "<br/>" +
     "Nachricht:&nbsp;" +
     "<br/>" +
     nachricht +
@@ -35,4 +40,8 @@ function sendEmail() {
     document.getElementById("form").style.display = "none";
     document.getElementById("reply").style.display = "block";
   });
+}
+
+function onSubmit(token) {
+  document.getElementById("demo-form").submit();
 }

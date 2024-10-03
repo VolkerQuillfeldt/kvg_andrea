@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="/src/style.css">
   <script src="js/smtp.js"></script>
   <script src="js/sendmail.js"></script>
+
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LctuVYqAAAAAHLQjZAdOp5IktEbmX0ps4OH7weD"></script>
+
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
   <title>KV Klingnau</title>
@@ -92,20 +95,24 @@
       <div id="form">
         <div class="row g-3 mb-3">
           <div class="col">
-            <label for="nachname" class="form-label">Name</label>
+            <label for="nachname" class="form-label">Name *</label>
             <input id="nachname" type="text" class="form-control" placeholder="Name" aria-label="Name" />
           </div>
           <div class="col">
-            <label for="vorname" class="form-label">Vorname</label>
+            <label for="vorname" class="form-label">Vorname *</label>
             <input id="vorname" type="text" class="form-control" placeholder="Vorname" aria-label="Vorname" />
           </div>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">E-Mail Adresse</label>
+          <label for="email" class="form-label">E-Mail Adresse *</label>
           <input id="email" type="email" class="form-control" placeholder="name@example.com" />
         </div>
         <div class="mb-3">
-          <label for="nachricht" class="form-label">Deine Nachricht</label>
+          <label for="betreff" class="form-label">Betreff *</label>
+          <input id="betreff" type="betreff" class="form-control" placeholder="Betreff" />
+        </div>
+        <div class="mb-3">
+          <label for="nachricht" class="form-label">Deine Nachricht *</label>
           <textarea id="nachricht" class="form-control" rows="3"></textarea>
         </div>
         <button class="btn btn-dark mt-2 mb-1" onclick="sendEmail()">➡︎ E-Mail senden</button>
