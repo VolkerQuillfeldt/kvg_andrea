@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
   color: white;
-  background-image: url(/images/platzhalter.jpg);
+  background-image: url(../images/platzhalter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 420px;

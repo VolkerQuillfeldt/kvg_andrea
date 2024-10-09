@@ -3,6 +3,7 @@ function sendEmail() {
   const vorname = document.getElementById("vorname").value;
   const email = document.getElementById("email").value;
   const nachricht = document.getElementById("nachricht").value;
+  const betreff = document.getElementById("betreff").value;
   const body =
     "<html><body>" +
     "Name:&nbsp;" +
@@ -27,8 +28,8 @@ function sendEmail() {
   Email.send({
     Host: "smtp.ionos.de",
     Username: "postmaster@andrea-schumacher.info",
-    Password: "Sorry123$Andrea",
-    To: "andrea.schumacher86@gmx.net",
+    Password: "xxxxxxxxxxx",
+    To: "postmaster@andrea-schumacher.info",
     From: "postmaster@andrea-schumacher.info",
     Subject: "KVK Kontaktformular Website",
     Body: body,

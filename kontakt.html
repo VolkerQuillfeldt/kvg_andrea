@@ -17,12 +17,13 @@
     href="https://fonts.googleapis.com/css2?family=Corinthia&family=DM+Serif+Display&family=Mr+Dafoe&family=Quicksand:wght@300;600&family=Qwitcher+Grypen&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbac8f4579.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/src/style.css">
-  <script src="js/smtp.js"></script>
-  <script src="js/sendmail.js"></script>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="./js/smtp.js"></script>
+  <script src="./js/sendmail.js"></script>
+  <script src="./js/rechapta.js"></script>
 
   <script src="https://www.google.com/recaptcha/enterprise.js?render=6LctuVYqAAAAAHLQjZAdOp5IktEbmX0ps4OH7weD"></script>
-
+  <script src="https://www.google.com/recaptcha/api.js"   async defer></script>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
   <title>KV Klingnau</title>
@@ -32,7 +33,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
     style="padding-top: 5px; padding-bottom: 5px; padding-right: 30px; background-color: white !important">
     <div class=" container-fluid" style="background-color: white">
-      <a class="navbar-brand" href="/"> 🐾 KV Klingnau 🐾</a>
+      <a class="navbar-brand" href="./index.html"> 🐾 KV Klingnau 🐾</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,46 +41,46 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link inactive" href="/index.html">Home</a>
+            <a class="nav-link inactive" href="./index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/verein.html" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Verein
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/news.html">News</a></li>
-              <li><a class="dropdown-item" href="/verein.html">Vereinsgeschichte</a></li>
-              <li><a class="dropdown-item" href="/resultate.html">Prüfungsresultate</a></li>
-              <li><a class="dropdown-item" href="/statuten.html">Statuten</a></li>
-              <li><a class="dropdown-item" href="/mitglied.html">Mitglied werden</a></li>
+              <li><a class="dropdown-item" href="./news.html">News</a></li>
+              <li><a class="dropdown-item" href="./verein.html">Vereinsgeschichte</a></li>
+              <li><a class="dropdown-item" href="./resultate.html">Prüfungsresultate</a></li>
+              <li><a class="dropdown-item" href="./statuten.html">Statuten</a></li>
+              <li><a class="dropdown-item" href="./mitglied.html">Mitglied werden</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/ausbildung.html" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Ausbildung
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/subnavigation/schutzdienst.html">Schutzdienst</a></li>
-              <li><a class="dropdown-item" href="/subnavigation/unterordnung.html">Unterordnung</a></li>
-              <li><a class="dropdown-item" href="/subnavigation/sanitaet.html">Sanität</a></li>
-              <li><a class="dropdown-item" href="/subnavigation/revier.html">Fährten und Revier</a></li>
-              <li><a class="dropdown-item" href="/subnavigation/jungundfamilienhunde.html">Jung- und Familienhunde</a>
+              <li><a class="dropdown-item" href="./subnavigation/schutzdienst.html">Schutzdienst</a></li>
+              <li><a class="dropdown-item" href="./subnavigation/unterordnung.html">Unterordnung</a></li>
+              <li><a class="dropdown-item" href="./subnavigation/sanitaet.html">Sanität</a></li>
+              <li><a class="dropdown-item" href="./subnavigation/revier.html">Fährten und Revier</a></li>
+              <li><a class="dropdown-item" href="./subnavigation/jungundfamilienhunde.html">Jung- und Familienhunde</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/fotos.html">Fotos</a>
+            <a class="nav-link" href="./fotos.html">Fotos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/jahresprogramm.html">Jahresprogramm</a>
+            <a class="nav-link" href="./jahresprogramm.html">Jahresprogramm</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/kontakt.html">Kontakt</a>
+            <a class="nav-link active" href="./kontakt.html">Kontakt</a>
           </li>
         </ul>
-        <img class="logokombi" src="images/Hund_Logokombi_solid.svg" alt="KV Klingnau Key Visual" width="40%">
+        <img class="logokombi" src="./images/Hund_Logokombi_solid.svg" alt="KV Klingnau Key Visual" width="40%">
       </div>
     </div>
   </nav>
@@ -109,13 +110,14 @@
         </div>
         <div class="mb-3">
           <label for="betreff" class="form-label">Betreff *</label>
-          <input id="betreff" type="betreff" class="form-control" placeholder="Betreff" />
+          <input id="betreff" type="text" class="form-control" placeholder="Betreff" />
         </div>
         <div class="mb-3">
           <label for="nachricht" class="form-label">Deine Nachricht *</label>
           <textarea id="nachricht" class="form-control" rows="3"></textarea>
         </div>
-        <button class="btn btn-dark mt-2 mb-1" onclick="sendEmail()">➡︎ E-Mail senden</button>
+        <div class="g-recaptcha" data-sitekey="6LfEzFwqAAAAAAOGvoDHhllfK-365jzyaILTtUho" data-callback="onloadCallback"></div>
+        <button id="sendButton" class="btn btn-dark mt-2 mb-1" disabled onclick="sendEmail()">➡︎ E-Mail senden</button>
       </div>
       <div id="reply" style="display: none;">Danke für deine Nachricht. Wir melden uns in kürze bei dir.
       </div>
@@ -128,7 +130,7 @@
         vorbeifahren
         bis zur 90° Linkskurve, bei dieser geradeaus ins Fahrvebot <br>(die Zufahrt bis zur Clubhütte ist gestattet).
       </p>
-      <iframe
+      <iframe title="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.0283164495427!2d8.237100311957255!3d47.5866912892318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47906835575f099b%3A0xc25592ed8798671!2sKV%20Klingnau!5e0!3m2!1sen!2sch!4v1727942246559!5m2!1sen!2sch"
         width="600" height="400" style="border:0;" class="mt-2 mb-3" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -137,7 +139,7 @@
       <h3 class="mt-4">Mitglied werden</h3>
       <p>Du interessierst dich für eine Mitliedschaft bei uns im Verein? <br>
         Bitte fülle das Online-Formular aus oder hole dir den Antrag als PDF.</p>
-      <a class="btn btn-dark mt-2 mb-3" href="mitglied.html">➡︎ Mitglied werden</a>
+      <a class="btn btn-dark mt-2 mb-3" href="./mitglied.html">➡︎ Mitglied werden</a>
     </div>
   </div>
   <footer class="footer mt-auto py-2">
@@ -146,7 +148,7 @@
           title="Facebook KV Klingnau"></a> <br><br>
         © 2024 KV
         Klingnau <br>
-      </span><a href="downloads/Datenschutzerklärung.pdf" target=”_blank”>Datenschutzerklärung</a>
+      </span><a href="./downloads/Datenschutzerklärung.pdf" target=”_blank”>Datenschutzerklärung</a>
       <br>
       <a href="mailto: info@kvklingnau.ch"> info@kvklingnau.ch</a>
       <br><br>
