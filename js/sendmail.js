@@ -25,24 +25,12 @@ function sendEmail() {
     "<br/>" +
     nachricht +
     "</body></html>";
-  Email.send({
-    Host: "smtp.ionos.de",
-    Username: "postmaster@andrea-schumacher.info",
-    Password: "xxxxxxxxxxx",
-    To: "postmaster@andrea-schumacher.info",
-    From: "postmaster@andrea-schumacher.info",
-    Subject: "KVK Kontaktformular Website",
-    Body: body,
-  }).then((message) => {
-    if (message != "OK") {
-      alert(message);
-      return;
-    }
-    document.getElementById("form").style.display = "none";
-    document.getElementById("reply").style.display = "block";
-  });
+
+  sendToMailServer(
+      {
+        subject: "KVK Kontaktformular Website",
+        body: body,
+      }
+  )
 }
 
-function onSubmit(token) {
-  document.getElementById("demo-form").submit();
-}

@@ -29,7 +29,7 @@
   <title>KV Klingnau</title>
 </head>
 
-<body>
+<body onload="loadMailForm()">
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
     style="padding-top: 5px; padding-bottom: 5px; padding-right: 30px; background-color: white !important">
     <div class=" container-fluid" style="background-color: white">
@@ -116,10 +116,12 @@
           <label for="nachricht" class="form-label">Deine Nachricht *</label>
           <textarea id="nachricht" class="form-control" rows="3"></textarea>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LfEzFwqAAAAAAOGvoDHhllfK-365jzyaILTtUho" data-callback="onloadCallback"></div>
+        <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LfEzFwqAAAAAAOGvoDHhllfK-365jzyaILTtUho" data-callback="onloadCallback"></div>
         <button id="sendButton" class="btn btn-dark mt-2 mb-1" disabled onclick="sendEmail()">➡︎ E-Mail senden</button>
       </div>
       <div id="reply" style="display: none;">Danke für deine Nachricht. Wir melden uns in kürze bei dir.
+      </div>
+      <div id="error" style="display: none;">Leider hat uns deine Nachricht nicht erreicht, versuche es bitte später nochmals.
       </div>
     </div>
     <br>
